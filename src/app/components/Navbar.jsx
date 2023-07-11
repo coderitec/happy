@@ -1,27 +1,27 @@
 import Link from "next/link";
 
+
 export default function Navbar() {
-    
   return (
     <nav>
-    <ul className="flex justify-between bg-blue-600 text-white h-[50px] items-center">
+        <ul className="flex justify-between text-xl capitalize h-[100px] bg-sky-700 text-white items-center px-3">
 
-      <Link href='/'>
-      <li>Home</li>
-      </Link>
+            <Link href='/'>
+            <li>home</li>
+            </Link>
 
-      <Link href='/students'>
-      <li>Students</li>
-      </Link>
+            <Link href='/about'>
+            <li>about</li>
+            </Link>
 
-      <Link href='/instructors'>
-      <li>Instructors</li>
-      </Link>
+            <Link href='/course'>
+            <li>course</li>
+            </Link>
 
-      <Link href='/about'>
-      <li>About</li> 
-      </Link>
-    </ul>
+            <Link href='/staff'>
+            <li>staff</li>
+            </Link>
+        </ul>
     </nav>
   )
 }
